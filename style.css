@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Lateef:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  padding-left: 100px;
+  list-style: none;
+}
+
+body {
+  font-family: "Lateef";
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 50px;
+  color: #fff2e6;
+  min-width: 1320px;
+}
+
+.hidden {
+  display: none;
+}
+
+#bg {
+  height: 100vh;
+  background: url(./img/momentumbg.jpg) no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+
+section {
+  padding-top: 200px;
+  text-align: center;
+}
+
+#clock_day {
+  position: absolute;
+  text-align: center;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#clock {
+  font-size: 50px;
+  letter-spacing: 2px;
+  line-height: 20px;
+}
+
+#day {
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+#login-form input:first-child {
+  background: none;
+  appearance: none;
+  border: 0;
+  font-size: 40px;
+  color: #fff2e6;
+  border-bottom: 3px solid #fff2e6;
+}
+
+#login-form input:last-child {
+  display: none;
+}
+
+#login-form input::placeholder,
+#todo-form input::placeholder {
+  color: rgba(255, 242, 230);
+  text-align: center;
+  font-weight: 400;
+}
+
+#greeting {
+  font-size: 60px;
+  line-height: 80px;
+}
+
+/* todo */
+#todo-form input {
+  background: none;
+  appearance: none;
+  border: 0;
+  font-size: 22px;
+  color: #fff2e6;
+  border-bottom: 2px solid #fff2e6;
+}
+
+#todo-list li {
+  font-weight: 400;
+}
+
+#todo-list li button {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  border: 0;
+  outline: none;
+  background-color: transparent;
+  color: grey;
+}
+
+#weather {
+  font-size: 26px;
+  font-weight: 400;
+  position: absolute;
+  top: 20px;
+  right: 40px;
+}
