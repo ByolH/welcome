@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Lateef:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hahmlet:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {
   margin: 0;
@@ -11,47 +11,55 @@ ul {
 }
 
 body {
-  font-family: "Lateef";
+  font-family: "Hahmlet";
   font-weight: 900;
-  font-size: 20px;
+  font-size: 30px;
   line-height: 50px;
   color: #fff2e6;
-  min-width: 1320px;
+  /* bg */
+  width: 100%;
+  height: 100vh;
+  background: url(./img/momentumbg.jpg) no-repeat center center;
+  background-size: cover;
+  overflow: hidden;
+  /* center */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hidden {
   display: none;
 }
 
-#bg {
-  height: 100vh;
-  background: url(./img/momentumbg.jpg) no-repeat center center;
-  background-size: cover;
+#contents {
+  width: 1320px;
+  margin: auto;
   position: relative;
 }
 
 section {
-  padding-top: 200px;
+  display: flex;
+  align-items: center;
   text-align: center;
+  flex-direction: column;
+  padding-bottom: 350px;
 }
 
 #clock_day {
-  position: absolute;
-  text-align: center;
-  top: 30px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-#clock {
-  font-size: 50px;
-  letter-spacing: 2px;
-  line-height: 20px;
+  margin: auto;
+  margin-bottom: 100px;
 }
 
 #day {
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+#clock {
   font-size: 30px;
   letter-spacing: 2px;
+  line-height: 30px;
 }
 
 #login-form input:first-child {
@@ -74,8 +82,12 @@ section {
   font-weight: 400;
 }
 
+input:focus,
+input:active {
+  outline: none;
+}
+
 #greeting {
-  font-size: 60px;
   line-height: 80px;
 }
 
@@ -104,9 +116,24 @@ section {
 }
 
 #weather {
-  font-size: 26px;
-  font-weight: 400;
+  font-size: 14px;
+  font-weight: 300;
   position: absolute;
-  top: 20px;
+  top: 0;
   right: 40px;
+}
+
+@media (max-width: 652px) {
+  section {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding-bottom: 270px;
+  }
+
+  #clock_day {
+    margin: auto;
+    margin-bottom: 100px;
+  }
 }
